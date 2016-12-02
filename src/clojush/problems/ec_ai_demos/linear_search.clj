@@ -2,7 +2,7 @@
 ;; an example problem for clojush, a Push/PushGP system written in Clojure
 ;; Nic McPhee, mcphee@morris.umn.edu, 2016
 
-(ns clojush.problems.ec-ai-demos.squirrel-play
+(ns clojush.problems.ec-ai-demos.linear-search
   (:use [clojush.pushgp.pushgp]
         [clojush.random]
         [clojush pushstate interpreter]
@@ -17,43 +17,18 @@
 ;; Taken from CodingBat: http://codingbat.com/prob/p135815
 
 (def input-set
-  [[70, false]
-   [70, true]
-   [95, false]
-   [95, true]
-   [90, false]
-   [90, true]
-   [50, false]
-   [50, true]
-   [100, false]
-   [100, true]
-   [105, true]
-   [59, false]
-   [59, true]
-   [60, false]
-   [60, true]
-   [61, true]
-   [61, false]
-   [89, false]
-   [89, true]
-   [91, false]
-   [91, true]
-   [99, false]
-   [99, true]
-   [101, true]
-   [101, false]
-   [105, true]
-   [105, false]
-   [200, true]
-   [200, false]])
+  [
+    [[7,5,4,8,1,2,3], 4]
+    [[5,5,5,5,5,5,5,5,5], 2]
+    [[8,3,0,5,8,9,4,4], 8]
+    ])
 
 (defn expected-output
   [inputs]
-  (let [[temperature is-summer] inputs]
-    (and (>= temperature 60)
-         (if is-summer
-           (<= temperature 100)
-           (<= temperature 90)))))
+  (let [[elements target] inputs]
+    (if (< (.indexOf elements target) 0)
+      false
+      true)))
 
 ; Make a new push state, and then add every
 ; input to the special `:input` stack.
