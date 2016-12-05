@@ -1,0 +1,208 @@
+;; -*- Report at generation 63
+--- Lexicse Program with Most Elite Cases Statistics ---
+Lexicase best genome: ({:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_dec} {:close 1, :instruction boolean_not} {:close 1, :instruction boolean_not} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_stackdepth} {:close 0, :instruction in2} {:close 0, :instruction vector_integer_emptyvector} {:close 0, :instruction vector_integer_replace} {:close 1, :instruction boolean_invert_first_then_and} {:close 0, :instruction boolean_and})
+Lexicase best program: (integer_rot in1 integer_dec boolean_frominteger integer_rot in1 integer_dec integer_rot in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger integer_stackdepth in2 vector_integer_emptyvector vector_integer_replace boolean_invert_first_then_and boolean_and)
+Lexicase best partial simplification: (in1 integer_dec boolean_frominteger integer_rot in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger in2 vector_integer_emptyvector boolean_invert_first_then_and boolean_and)
+Lexicase best errors: [0 0 0 0 0 0 0 0]
+Lexicase best number of elite cases: 8
+Lexicase best total error: 0
+Lexicase best mean error: 0.0
+Lexicase best size: 21
+Percent parens: 0.048
+--- Lexicse Program with Most Zero Cases Statistics ---
+Zero cases best genome: ({:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_dec} {:close 1, :instruction boolean_not} {:close 1, :instruction boolean_not} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_stackdepth} {:close 0, :instruction in2} {:close 0, :instruction vector_integer_emptyvector} {:close 0, :instruction vector_integer_replace} {:close 1, :instruction boolean_invert_first_then_and} {:close 0, :instruction boolean_and})
+Zero cases best program: (integer_rot in1 integer_dec boolean_frominteger integer_rot in1 integer_dec integer_rot in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger integer_stackdepth in2 vector_integer_emptyvector vector_integer_replace boolean_invert_first_then_and boolean_and)
+Zero cases best partial simplification: (in1 integer_dec boolean_frominteger integer_rot in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger integer_stackdepth in2 vector_integer_emptyvector boolean_invert_first_then_and boolean_and)
+Zero cases best errors: [0 0 0 0 0 0 0 0]
+Zero cases best number of elite cases: 8
+Zero cases best number of zero cases: 8
+Zero cases best total error: 0
+Zero cases best mean error: 0.0
+Zero cases best size: 21
+Percent parens: 0.048
+--- Lexicase Population Statistics ---
+Count of elite individuals by case: (90 52 84 87 60 90 84 87)
+Population mean number of elite cases: 6.34
+Count of perfect (error zero) individuals by case: (90 52 84 87 60 90 84 87)
+Population mean number of perfect (error zero) cases: 6.34
+--- Best Program (based on total-error) Statistics ---
+Best genome: ({:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_rot} {:close 0, :instruction in1} {:close 0, :instruction integer_dec} {:close 0, :instruction integer_dec} {:close 1, :instruction boolean_not} {:close 1, :instruction boolean_not} {:close 0, :instruction boolean_frominteger} {:close 0, :instruction integer_stackdepth} {:close 0, :instruction in2} {:close 0, :instruction vector_integer_emptyvector} {:close 0, :instruction vector_integer_replace} {:close 1, :instruction boolean_invert_first_then_and} {:close 0, :instruction boolean_and})
+Best program: (integer_rot in1 integer_dec boolean_frominteger integer_rot in1 integer_dec integer_rot in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger integer_stackdepth in2 vector_integer_emptyvector vector_integer_replace boolean_invert_first_then_and boolean_and)
+Partial simplification: (integer_rot in1 integer_dec boolean_frominteger in1 integer_dec integer_dec boolean_not boolean_not boolean_frominteger in2 vector_integer_emptyvector boolean_invert_first_then_and boolean_and)
+Errors: [0 0 0 0 0 0 0 0]
+Total: 0
+Mean: 0.0
+Genome size: 20
+Size: 21
+Percent parens: 0.048
+--- Population Statistics ---
+Average total errors in population: 1.66
+Median total errors in population: 1
+Error averages by case: (0.1 0.48 0.16 0.13 0.4 0.1 0.16 0.13)
+Error minima by case: (0 0 0 0 0 0 0 0)
+Average genome size in population (length): 13.57
+Average program size in population (points): 14.57
+Average percent parens in population: 0.073
+--- Population Diversity Statistics ---
+Min copy number of one Plush genome: 1
+Median copy number of one Plush genome: 1
+Max copy number of one Plush genome: 18
+Genome diversity (% unique Plush genomes):	 0.4
+Min copy number of one Push program: 1
+Median copy number of one Push program: 1
+Max copy number of one Push program: 18
+Syntactic diversity (% unique Push programs):	 0.4
+Total error diversity:				 0.06
+Error (vector) diversity:			 0.08
+--- Run Statistics ---
+Number of program evaluations used so far: 6400
+Number of point (instruction) evaluations so far: 820328
+--- Timings ---
+Current time: 1480957593174 milliseconds
+
+
+
+
+
+
+
+
+
+
+;; -*- Report at generation 1001
+--- Lexicse Program with Most Elite Cases Statistics ---
+Lexicase best genome: ()
+Lexicase best program: ()
+Lexicase best partial simplification: ()
+Lexicase best errors: [1 1 1 1 1 1 1 1]
+Lexicase best number of elite cases: 8
+Lexicase best total error: 8
+Lexicase best mean error: 1.0
+Lexicase best size: 1
+Percent parens: 1.000
+--- Lexicse Program with Most Zero Cases Statistics ---
+Zero cases best genome: ()
+Zero cases best program: ()
+Zero cases best partial simplification: ()
+Zero cases best errors: [1 1 1 1 1 1 1 1]
+Zero cases best number of elite cases: 8
+Zero cases best number of zero cases: 0
+Zero cases best total error: 8
+Zero cases best mean error: 1.0
+Zero cases best size: 1
+Percent parens: 1.000
+--- Lexicase Population Statistics ---
+Count of elite individuals by case: (500 500 500 500 500 500 500 500)
+Population mean number of elite cases: 8.00
+Count of perfect (error zero) individuals by case: (0 0 0 0 0 0 0 0)
+Population mean number of perfect (error zero) cases: 0.00
+--- Best Program (based on total-error) Statistics ---
+Best genome: ()
+Best program: ()
+Partial simplification: ()
+Errors: [1 1 1 1 1 1 1 1]
+Total: 8
+Mean: 1.0
+Genome size: 0
+Size: 1
+Percent parens: 1.000
+--- Population Statistics ---
+Average total errors in population: 8.0
+Median total errors in population: 8
+Error averages by case: (1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0)
+Error minima by case: (1 1 1 1 1 1 1 1)
+Average genome size in population (length): 0.0
+Average program size in population (points): 1.0
+Average percent parens in population: 1.000
+--- Population Diversity Statistics ---
+Min copy number of one Plush genome: 500
+Median copy number of one Plush genome: 500
+Max copy number of one Plush genome: 500
+Genome diversity (% unique Plush genomes):	 0.002
+Min copy number of one Push program: 500
+Median copy number of one Push program: 500
+Max copy number of one Push program: 500
+Syntactic diversity (% unique Push programs):	 0.002
+Total error diversity:				 0.002
+Error (vector) diversity:			 0.002
+--- Run Statistics ---
+Number of program evaluations used so far: 501000
+Number of point (instruction) evaluations so far: 3698744
+--- Timings ---
+Current time: 1480958681244 milliseconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+;; -*- Report at generation 1001
+--- Lexicse Program with Most Elite Cases Statistics ---
+Lexicase best genome: ()
+Lexicase best program: ()
+Lexicase best partial simplification: ()
+Lexicase best errors: [1 1 1 1 1 1 1 1]
+Lexicase best number of elite cases: 8
+Lexicase best total error: 8
+Lexicase best mean error: 1.0
+Lexicase best size: 1
+Percent parens: 1.000
+--- Lexicse Program with Most Zero Cases Statistics ---
+Zero cases best genome: ()
+Zero cases best program: ()
+Zero cases best partial simplification: ()
+Zero cases best errors: [1 1 1 1 1 1 1 1]
+Zero cases best number of elite cases: 8
+Zero cases best number of zero cases: 0
+Zero cases best total error: 8
+Zero cases best mean error: 1.0
+Zero cases best size: 1
+Percent parens: 1.000
+--- Lexicase Population Statistics ---
+Count of elite individuals by case: (500 500 500 500 500 500 500 500)
+Population mean number of elite cases: 8.00
+Count of perfect (error zero) individuals by case: (0 0 0 0 0 0 0 0)
+Population mean number of perfect (error zero) cases: 0.00
+--- Best Program (based on total-error) Statistics ---
+Best genome: ()
+Best program: ()
+Partial simplification: ()
+Errors: [1 1 1 1 1 1 1 1]
+Total: 8
+Mean: 1.0
+Genome size: 0
+Size: 1
+Percent parens: 1.000
+--- Population Statistics ---
+Average total errors in population: 8.0
+Median total errors in population: 8
+Error averages by case: (1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0)
+Error minima by case: (1 1 1 1 1 1 1 1)
+Average genome size in population (length): 0.0
+Average program size in population (points): 1.0
+Average percent parens in population: 1.000
+--- Population Diversity Statistics ---
+Min copy number of one Plush genome: 500
+Median copy number of one Plush genome: 500
+Max copy number of one Plush genome: 500
+Genome diversity (% unique Plush genomes):	 0.002
+Min copy number of one Push program: 500
+Median copy number of one Push program: 500
+Max copy number of one Push program: 500
+Syntactic diversity (% unique Push programs):	 0.002
+Total error diversity:				 0.002
+Error (vector) diversity:			 0.002
+--- Run Statistics ---
+Number of program evaluations used so far: 501000
+Number of point (instruction) evaluations so far: 6691609
+--- Timings ---
+Current time: 1480959318269 milliseconds
+
+

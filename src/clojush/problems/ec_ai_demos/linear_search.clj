@@ -21,14 +21,26 @@
     [[7,5,4,8,1,2,3], 4]
     [[5,5,5,5,5,5,5,5,5], 2]
     [[8,3,0,5,8,9,4,4], 8]
+    [[8,3,0,5,8,9,4,45,4,8686,454,765,85], 0]
+    [[8,3,0,5,8,9,4,46,3,73,237,67,83,637], 1]
+    [[3,3,3,3,3,3,3], 3]
+    [[87,35,0,55,82,976,5354,674,56,45,24], 56]
+    [[], 8]
     ])
 
-(defn expected-output
+;Looks to see if the target exists in elements
+(defn expected-output-old
   [inputs]
   (let [[elements target] inputs]
     (if (< (.indexOf elements target) 0)
       false
       true)))
+
+;Returns the index of an element in a vector, negative if nonexistent
+(defn expected-output
+  [inputs]
+  (let [[elements target] inputs]
+    (.indexOf elements target)))
 
 ; Make a new push state, and then add every
 ; input to the special `:input` stack.
@@ -64,12 +76,8 @@
   (concat
     ; Include all the instructions that act on integers and booleans
     ; Could have :exec here, but I just am limiting things to exec-if
-    (registered-for-stacks [:integer :boolean])
-    (list 'exec_if)
-    ; A bunch of random numbers in case that's useful.
-    ; (list (fn [] (lrand-int 100)))
-    ; The three numeric constants that are specified in the problem statement
-    (list 60 90 100)
+    (registered-for-stacks [:integer :boolean :vector_integer :exec])
+    ;(list 'exec_if)
     ; The two inputs
     (list 'in1 'in2)))
 
