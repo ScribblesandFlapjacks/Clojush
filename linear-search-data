@@ -206,3 +206,83 @@ Number of point (instruction) evaluations so far: 6691609
 Current time: 1480959318269 milliseconds
 
 
+
+
+
+
+
+
+Indexof Population Size 500 :vector_integer :exec
+
+SUCCESS at generation 489
+Successful program: (in1 vector_integer_emptyvector exec_do*count (in1 vector_integer_rot vector_integer_nth in1 vector_integer_rot vector_integer_nth vector_integer_indexof integer_dec integer_mod vector_integer_occurrencesof integer_add in2 vector_integer_indexof))
+Errors: [0 0 0 0 0 0 0 0]
+Total error: 0
+History: null
+Size: 18
+
+
+Auto-simplifying with starting size: 18
+step: 0
+program: (in1 vector_integer_emptyvector exec_do*count (in1 vector_integer_rot vector_integer_nth in1 vector_integer_rot vector_integer_nth vector_integer_indexof integer_dec integer_mod vector_integer_occurrencesof integer_add in2 vector_integer_indexof))
+errors: [0 0 0 0 0 0 0 0]
+total: 0
+size: 18
+
+step: 500
+program: (in1 in2 vector_integer_indexof)
+errors: (0 0 0 0 0 0 0 0)
+total: 0
+size: 4
+
+step: 1000
+program: (in1 in2 vector_integer_indexof)
+errors: (0 0 0 0 0 0 0 0)
+total: 0
+size: 4
+
+
+
+
+
+
+
+
+
+Contains population size 100 :vector_integer
+SUCCESS at generation 23
+Successful program: (integer_lte vector_integer_yankdup vector_integer_first vector_integer_yank in1 vector_integer_stackdepth integer_dup_items vector_integer_replacefirst boolean_shove vector_integer_emptyvector integer_rot vector_integer_swap integer_gt vector_integer_occurrencesof in2 boolean_and vector_integer_contains vector_integer_dup_items vector_integer_butlast vector_integer_indexof vector_integer_swap boolean_and integer_stackdepth vector_integer_length vector_integer_flush integer_gte integer_rot integer_add integer_add in2 boolean_yankdup vector_integer_set vector_integer_flush)
+Errors: [0 0 0 0 0 0 0 0]
+Total error: 0
+History: null
+Size: 34
+
+
+Auto-simplifying with starting size: 34
+step: 0
+program: (integer_lte vector_integer_yankdup vector_integer_first vector_integer_yank in1 vector_integer_stackdepth integer_dup_items vector_integer_replacefirst boolean_shove vector_integer_emptyvector integer_rot vector_integer_swap integer_gt vector_integer_occurrencesof in2 boolean_and vector_integer_contains vector_integer_dup_items vector_integer_butlast vector_integer_indexof vector_integer_swap boolean_and integer_stackdepth vector_integer_length vector_integer_flush integer_gte integer_rot integer_add integer_add in2 boolean_yankdup vector_integer_set vector_integer_flush)
+errors: [0 0 0 0 0 0 0 0]
+total: 0
+size: 34
+
+step: 500
+program: (in1 in2 vector_integer_contains)
+errors: (0 0 0 0 0 0 0 0)
+total: 0
+size: 4
+
+step: 1000
+program: (in1 in2 vector_integer_contains)
+errors: (0 0 0 0 0 0 0 0)
+total: 0
+size: 4
+
+
+
+
+
+
+
+
+
+

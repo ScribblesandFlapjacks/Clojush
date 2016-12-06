@@ -20,7 +20,7 @@
   [
     [[7,5,4,8,1,2,3], 4]
     [[5,5,5,5,5,5,5,5,5], 2]
-    [[8,3,0,5,8,9,4,4], 8]
+    [[8,3,0,5,8,9,4,4], 9]
     [[8,3,0,5,8,9,4,45,4,8686,454,765,85], 0]
     [[8,3,0,5,8,9,4,46,3,73,237,67,83,637], 1]
     [[3,3,3,3,3,3,3], 3]
@@ -58,7 +58,7 @@
   [program inputs]
   (let [start-state (make-start-state inputs)
         end-state (run-push program start-state)
-        result (top-item :boolean end-state)]
+        result (top-item :integer end-state)]
     result))
 
 ;Checks actual versus expected and returns an error value
@@ -76,7 +76,7 @@
   (concat
     ; Include all the instructions that act on integers and booleans
     ; Could have :exec here, but I just am limiting things to exec-if
-    (registered-for-stacks [:integer :boolean :vector_integer :exec])
+    (registered-for-stacks [:integer :boolean :exec])
     ;(list 'exec_if)
     ; The two inputs
     (list 'in1 'in2)))
