@@ -13,6 +13,7 @@ Setup
 
 For our setup we used squirrel-play.clj as a template and modified it as follows.
 * We added the following test cases:
+
 	[[7,5,4,8,1,2,3], 4]
 	[[5,5,5,5,5,5,5,5,5], 2]
 	[[8,3,0,5,8,9,4,4], 9]
@@ -21,6 +22,7 @@ For our setup we used squirrel-play.clj as a template and modified it as follows
 	[[3,3,3,3,3,3,3], 3]
 	[[87,35,0,55,82,976,5354,674,56,45,24], 56]
 	[[], 8]
+
 * We created two different expected-output functions, one that returns true or false based on the targets existence,
 the other returns the index of the first representation of the target element in the vector if it exists.
 * Made no changes to make-start-state
