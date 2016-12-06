@@ -13,14 +13,14 @@ Setup
 
 For our setup we used squirrel-play.clj as a template and modified it as follows.
 * We added the following test cases:
-    [[7,5,4,8,1,2,3], 4]
-    [[5,5,5,5,5,5,5,5,5], 2]
-    [[8,3,0,5,8,9,4,4], 9]
-    [[8,3,0,5,8,9,4,45,4,8686,454,765,85], 0]
-    [[8,3,0,5,8,9,4,46,3,73,237,67,83,637], 1]
-    [[3,3,3,3,3,3,3], 3]
-    [[87,35,0,55,82,976,5354,674,56,45,24], 56]
-    [[], 8]
+    *[[7,5,4,8,1,2,3], 4]
+    *[[5,5,5,5,5,5,5,5,5], 2]
+    *[[8,3,0,5,8,9,4,4], 9]
+    *[[8,3,0,5,8,9,4,45,4,8686,454,765,85], 0]
+    *[[8,3,0,5,8,9,4,46,3,73,237,67,83,637], 1]
+    *[[3,3,3,3,3,3,3], 3]
+    *[[87,35,0,55,82,976,5354,674,56,45,24], 56]
+    *[[], 8]
 * We created two different expected-output functions, one that returns true or false based on the targets existence,
 the other returns the index of the first representation of the target element in the vector if it exists.
 * Made no changes to make-start-state
@@ -39,10 +39,10 @@ Results
 For our first setup we used the expected-output-old function that is the simple boolean yes no output function with a population
 size of 100 and the :vector_integer stack. The run ended after generation 23, with the following successful simplified program.
 
-program: (in1 in2 vector_integer_contains)
-errors: (0 0 0 0 0 0 0 0)
-total: 0
-size: 4
+	program: (in1 in2 vector_integer_contains)
+	errors: (0 0 0 0 0 0 0 0)
+	total: 0
+	size: 4
 
 As can be seen, using the higher order function vector_integer_contains the evolutionary run was able to complete very quickly with
 an incredibly simple program. Ultimately this is not a particularly interesting result as it shows that Clojush essentially had the
@@ -56,10 +56,10 @@ For this we perceived it being a more difficult problem and decided to use the d
 :exec stack. This is also where we looked for our results in the integer stack rather than the boolean stack. The run ended in 489 generations
 with a simplified program as follows
 
-program: (in1 in2 vector_integer_indexof)
-errors: (0 0 0 0 0 0 0 0)
-total: 0
-size: 4
+	program: (in1 in2 vector_integer_indexof)
+	errors: (0 0 0 0 0 0 0 0)
+	total: 0
+	size: 4
 
 It is a bit surprising that it took so many more generations to once again find a built in function that completes the entirety of the task.
 Our hypothesis is that by looking at the :integer stack we have increased the possible values to explore.
